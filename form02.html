@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- 단축키 = ! + Enter. 필수는 아님 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- ASCII code. 10진수 - 2진수 변환 인코딩 방식. 화면에 출력하는 것은 A, B 등 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 디자인 관련된 태그. 신경 쓰지 않아도 된다.-->
+    <title>Input form Practice</title>
+</head>
+<body>
+    <form> <!-- Form으로 감싸주는 이유 = 입력된 내용을 서버에 전달되면, Form 태그 안에 있는 것만 저장이 됨. Submit 버튼이 있는 해당 form 내용 전체가 서버로 전송 됨.-->
+        회원이름 : <input type="hidden" name="member_name" value="custom"><br> <!-- hidden = 유저의 화면에는 안 보이고, 코드에는 존재하고, 서버에 간다. value로 미리 값을 매길 수 있다.-->
+        아이디 : <input type="text" name="memberID" placeholder="guest"><br> <!-- placeholder = 샘플로 넣을 때 쓰는 것-->
+        비밀번호 : <input type="password" name="memberPW" autofocus><br> <!-- autofocus = 최초에 특정 폼에 커서가 자동으로 들어감.-->
+        메모장 : <textarea rows="15" cols="30" name="memo"></textarea><br>
+        이메일 : <input type="text" name="email1"> @
+        <select name="email2" size="20"> <!-- select에서의 size는 항목이 들어갈 갯수-->
+            <option value="naver">naver.com</option> <!-- 유저가 뭘 선택했는지 알기 위해 value 값으로 지정-->
+            <option value="daum">gmail.com</option>
+            <option value="gmail" selected>daum.net</option> <!-- selected는 미리 선택되게 하는 것 -->
+        </select><br>
+        거주지 : <input type="text" value="서울" readonly><br> <!-- readonly = 사용자에게 보여주긴 해야 하는데, 고치진 못하게 해야 할 때 씀.-->
+        <input type="submit" value="로그인">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>
+
+<!-- Null 값은 아무 것도 없는 값. -->
+<!-- git은 그냥 프로그램. git은 로컬 컴퓨터에서 작성한 코드들을 관리해줌. github는 코드 저장소 역할-->
+<!-- git으로 할 수 있는 일 = 코드 백업, 버전 관리, 협업-->
+<!-- 10:46-->

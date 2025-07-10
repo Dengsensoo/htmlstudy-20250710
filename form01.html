@@ -1,0 +1,45 @@
+<html>
+    <head></head>
+    <body>
+        <h1>회원 가입 양식</h1>
+        <hr>
+        <form>
+            아이디 : <input type="text" id="member_id" name="member_id" size="20"><br> <!-- input = 입력란 type = 입력 글자 속성-->
+            비밀번호 : <input type="password" id="member_password" name="password" size="20"><br> <!-- password = 비밀번호 입력 타입-->
+            이름 : <input type="text" id="member_name" name="member_name" size="20"><br>
+            전화번호 :
+                <input type="text" id="phone1" name="phone1" size="5">
+                - <input type="text" id="phone2" name="phone2" size="5">
+                - <input type="text" id="phone3" name="phone3" size="5"><br>
+            회사전화 : <input type="tel" id="officePhone"><br> <!-- tel은 전화번호 양식을 받는 타입 -->
+            이메일 : <input type="email" id="email"><br> <!-- email은 이메일 양식을 받는 타입-->
+            성별 :
+                <input type="radio" name="gender" value="male" checked>남
+                <input type="radio" name="gender" value="female">여<br>
+                <!-- radio = 체크 박스 타입. 같은 name 타입의 이름은 1가지만 선택할 수 있게 해줌. -->
+            취미 :
+                <input type="checkbox" name="hobby" value="sports">스포츠 <!-- radio 타입에 비해 checkbox는 여러 개 선택 가능 -->
+                <input type="checkbox" name="hobby" value="movies">영화
+                <input type="checkbox" name="hobby" value="books">독서
+                <input type="checkbox" name="hobby" value="games">게임<br>
+            보유 스마트폰 대수 : <input type ="number" min="1" max="3" value="1"><br>
+            나이 : <input type="range" min="20" max="50" step="1" name="member_age"><br> <!-- range는 슬라이더로 값을 입력 받음. step은 예를 들어 20 21 22 -->
+            생일 : <input type="date" name="birth"><br>
+            태어난 시간 : <input type="datetime-local" name="birth_time"><br>
+            예약 : <input type="date" min="2025-07-10" max="2025-12-31"><br>
+            사진 첨부 : <input type="file"><br> <!-- file은 버튼 클릭 시, 파일 탐색-->
+            <input type="submit" value="회원가입">
+            <input type="reset" value="다시입력">
+            <input type="button" value="가입취소" onclick="window.open('image1.html','_black', 'width=300', 'height=400')"> <!-- JavaScript 함수-->
+            <input type="image" src="images/login.png" onclick="">
+        </form>
+    </body>
+</html>
+
+<!-- 필요하면 그 때 찾아보면 된다. 미리 속성들을 외워서 쓰려면 힘들다. 책이나 블로그, ChatGPT 등의 도움을 받자.-->
+<!-- CRUD = Create Read Update Delete-->
+<!-- 항목 별 name은 같게, value는 다르게 해야 서버에 전송이 됨-->
+<!-- validation 유효성 체크(예를 들어 이메일 양식에는 @가 포함되야 한다는 알림을 넣음)는 DB가 원하는 값을 사용자가 입력할 수 있게 함-->
+<!-- id 값은 CSS에서 디자인하기 위한 값. name 값이 서버로 가기 위한 값 -->
+<!-- toggle 기능 = 키면 OFF 할 때까지 계속 ON 상태 -->
+<!-- 쿠키 승인 여부는 사용자에게 먼저 물어보는 것이 원칙. 한국은 그 원칙을 지키지 않는 경우가 많음-->

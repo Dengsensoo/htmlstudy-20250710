@@ -1,0 +1,17 @@
+1일차 = hello.html, list.html, 
+
+2일차 = anchor.html, camera.html, form01.html
+
+3일차 = form02.html git 사용자 설정.
+기본 리눅스 명령어
+pwd = 현재 위치한 폴더 확인
+ls = 현재 위치한 폴더의 내용 표시
+ls -l = 더 자세히 표시. 용량까지 나옴
+clear = 터미널 화면 지우기
+cd = change directory. 이동할 디렉토리 입력 가능
+cd .. = 상위 폴더로 한 칸 빠져 나오기
+cd ~ = 처음에 시작했던 폴더로 초기화
+cd Documents = 내 문서 폴더 가기
+mkdir = make directory. 지정한 이름으로 하위 디렉토리 생성
+rm = remove. 폴더 삭제
+exit = git bash 터미널 창 종료
